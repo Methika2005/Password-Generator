@@ -38,7 +38,7 @@ def strength_text(score):
     return ["Very Weak 😢", "Weak 😕", "Medium 🙂", "Strong 💪", "Very Strong 🔥"][score-1] if score else "Too Short"
 
 def strength_color(score):
-    colors = ["gray", "red", "orange", "yellow", "green"]
+    colors = ["gray", "red", "orange", "yellow", "green", "blue"]
     return colors[score-1] if score else "#555"
 
 # ---------- GUI Actions ----------
@@ -159,3 +159,4 @@ tk.Label(glass, text="Made with ❤️ using Python", font=("Poppins", 9),
          fg="#888", bg="#1a1a2f").pack(side="bottom", pady=10)
 
 root.mainloop()
+
